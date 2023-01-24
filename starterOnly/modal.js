@@ -96,13 +96,11 @@ function validate(){
   }
   //locations
   let location_value = null
-  console.log(location_value)
   for(let i = 0; i < locations.length; i++) {
       if(locations[i].checked){
           location_value = locations[i].value
       }
   }
-  console.log(location_value)
   if(location_value == null){
     locations[0].parentNode.setAttribute("data-error-visible", true)
     validation = false
