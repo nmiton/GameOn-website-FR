@@ -470,7 +470,7 @@ input[data-error]::after {
 }
 
 .hero-text {
-  width: 146%;
+  width: 100%;
   font-weight: normal;
   margin-top: 57px;
   padding: 0;
@@ -537,9 +537,12 @@ footer {
   }
 
   .hero-text {
-    width: unset;
+    width: 146%;
     font-size: 1.5rem;
     white-space: normal;
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis;
   }
   .hero-img img {
     border-radius: 10px;
