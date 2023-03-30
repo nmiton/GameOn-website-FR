@@ -537,7 +537,6 @@ footer {
   }
 
   .hero-text {
-    width: 146%;
     font-size: 1.5rem;
     white-space: normal;
     overflow: hidden;
@@ -558,6 +557,17 @@ footer {
     text-align: center;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    width: 75%;
+  }
+  .hero-headline{
+    white-space: normal;
+  }
+}
+
 
 @keyframes modalopen {
   from {
