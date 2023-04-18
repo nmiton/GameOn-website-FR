@@ -558,20 +558,17 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   img{
     padding-right: 0;
   }
+  .hero-headline{
+    white-space: normal;
+  }
   .hero-text {
     width: 75%;
   }
-  .hero-headline{
-    white-space: normal;
-    /* font-size: 3rem; */
-  }
 }
-
 
 @keyframes modalopen {
   from {
