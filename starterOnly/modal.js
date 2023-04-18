@@ -109,7 +109,6 @@ function validate(){
   }
 
   if(!checkbox1.checked){
-    console.log(checkbox1.parentNode)
     checkbox1.parentNode.setAttribute("data-error-visible", true)
     validation = false
   }else{
@@ -148,7 +147,7 @@ function validateEmail(input) {
 function validateDate(input){
   const date = input.value
   const nowDate = new Date();
-  if(date>nowDate || !date){
+  if(new Date(date)>nowDate || !date){
     return false;
   }else{
     return true;
